@@ -107,7 +107,7 @@ VET CLINIC DATABASE IS a relational database to  data structure for a vet clinic
 
 ## 📷 Screenshot <a name="screenshot"></a>
 
-![Screenshot](<replace-with-your-screenshot-image-URL>)
+![Screenshot](https://github.com/Ochiengsteven/vet_clinic/blob/sql-queries/SCREENSHOT.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
