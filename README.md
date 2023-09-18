@@ -105,6 +105,13 @@ VET CLINIC DATABASE IS a relational database to  data structure for a vet clinic
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 📷 Screenshot <a name="screenshot"></a>
+
+![Screenshot](<replace-with-your-screenshot-image-URL>)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- LIVE DEMO -->
 
 <!-- ## 🚀 Live Demo <a name="live-demo"></a>
