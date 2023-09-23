@@ -49,7 +49,9 @@ DROP TABLE animals;
 -- Rename the temporary table to animals
 ALTER TABLE animals_temp RENAME TO animals;
 
--- Add the owner_id column to the animals table
+-- Add the species_id and owner_id columns to the animals table
 ALTER TABLE animals
+ADD COLUMN species_id INT,
 ADD COLUMN owner_id INT,
+ADD FOREIGN KEY (species_id) REFERENCES species(id),
 ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
