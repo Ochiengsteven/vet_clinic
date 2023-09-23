@@ -38,6 +38,23 @@ UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
 UPDATE animals SET owner_id = 2 WHERE name IN ('Gabumon', 'Pikachu');
 UPDATE animals SET owner_id = 3 WHERE name IN ('Devimon', 'Plantmon');
 
+-- Insert data for vets
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES
+    ('Vet William Tatcher', 45, '2000-04-23'),
+    ('Vet Maisy Smith', 26, '2019-01-17'),
+    ('Vet Stephanie Mendez', 64, '1981-05-04'),
+    ('Vet Jack Harkness', 38, '2008-06-08');
+
+-- Insert data for specializations
+INSERT INTO specializations (vet_id, specialization)
+VALUES
+    (1, 'Pokemon'),
+    (3, 'Digimon'),
+    (3, 'Pokemon'),
+    (4, 'Digimon');
+
+
 -- Insert data into the visits table
 INSERT INTO visits (visit_id, animal_id, vet_id, visit_date)
 VALUES
