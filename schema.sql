@@ -55,3 +55,30 @@ ADD COLUMN species_id INT,
 ADD COLUMN owner_id INT,
 ADD FOREIGN KEY (species_id) REFERENCES species(id),
 ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+CREATE TABLE vets (
+    id INT,
+    name varchar(100),
+    age INT,
+    date_of_graduation DATE,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE specializations (
+    specialization_id INT,
+    species_id INT,
+    vet_id INT,
+    PRIMARY KEY(specialization_id),
+    FOREIGN KEY (species_id) REFERENCES species(id),
+    FOREIGN KEY (vet_id) REFERENCES vets(id)
+);
+
+CREATE TABLE visits (
+    visit_id INT,
+    animal_id INT,
+    vet_id INT,
+    visit_date DATE,
+    PRIMARY KEY (visit_id),
+    FOREIGN KEY (animal_id) REFERENCES animals(id),
+    FOREIGN KEY (vet_id) REFERENCES vets(id)
+);
